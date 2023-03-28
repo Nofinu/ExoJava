@@ -1,5 +1,6 @@
 package org.example;
 
+import org.example.exo6.Exo6;
 import org.example.exo8.Exo8;
 
 public class Main {
@@ -9,7 +10,7 @@ public class Main {
         //Exo3.getPrixTTC();
         //Exo4.getSign();
         //Exo5.getSignOfProduct();
-        //Exo6.getOrdreAlphabetique();
-        Exo8.Entry();
+        Exo6.getOrdreAlphabetique();
+        //Exo8.Entry();
     }
 }
