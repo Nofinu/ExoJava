@@ -1,11 +1,5 @@
 package org.example;
 
-import org.example.ex02.Exo2;
-import org.example.exo1.Exo1;
-import org.example.exo3.Exo3;
-import org.example.exo4.Exo4;
-import org.example.exo5.Exo5;
-import org.example.exo6.Exo6;
 import org.example.exo8.Exo8;
 
 public class Main {
