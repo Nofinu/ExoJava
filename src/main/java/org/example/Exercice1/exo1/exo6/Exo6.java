@@ -34,9 +34,21 @@ public class Exo6 {
         boolean test = true;
 
         for (int i = 0; i < table.length - 2; i++) {
+            int wordLength;
 
-            if (table[i].charAt(0) > table[i + 1].charAt(0)) {
-                test = false;
+            if(table[i].length() < table[i+1].length()){
+                wordLength = table[i].length();
+            }else{
+                wordLength = table[i+1].length();
+            }
+
+            for (int j = 0; j < wordLength; j++) {
+                if (table[i].charAt(j) > table[i + 1].charAt(j)) {
+                    test = false;
+                    break;
+                }
+            }
+            if(!test){
                 break;
             }
         }
