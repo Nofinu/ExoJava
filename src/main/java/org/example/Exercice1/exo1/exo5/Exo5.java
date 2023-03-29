@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Exo5 {
 
-    public static void getSignOfProduct(){
+    public static void getSignOfProduct() {
 
         System.out.println("entrer la 1er valeur");
         Scanner sc = new Scanner(System.in);
@@ -14,19 +14,16 @@ public class Exo5 {
         Scanner sc2 = new Scanner(System.in);
         float nbr2 = sc2.nextFloat();
 
-        if(nbr1<0){
+        if (nbr1 < 0) {
             if (nbr2 < 0) {
                 System.out.println("Produit Positif");
-            }
-            else {
+            } else {
                 System.out.println("Produit négatif");
             }
-        }
-        else{
-            if(nbr2<0){
+        } else {
+            if (nbr2 < 0) {
                 System.out.println("Produit Négatif");
-            }
-            else{
+            } else {
                 System.out.println("Produit Positif");
             }
         }
