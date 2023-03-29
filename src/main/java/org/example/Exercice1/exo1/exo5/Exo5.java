@@ -11,8 +11,7 @@ public class Exo5 {
         float nbr1 = sc.nextFloat();
 
         System.out.println("entrer la 2eme valeur");
-        Scanner sc2 = new Scanner(System.in);
-        float nbr2 = sc2.nextFloat();
+        float nbr2 = sc.nextFloat();
 
         if (nbr1 < 0) {
             if (nbr2 < 0) {
