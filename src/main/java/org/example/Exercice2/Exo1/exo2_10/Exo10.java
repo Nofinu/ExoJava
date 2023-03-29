@@ -41,7 +41,7 @@ public class Exo10 {
         if(Factonbr<finalValue){
             returnSomme = Somme(Factonbr,finalValue);
         }
-        returnSomme *= Factonbr;
+        returnSomme += Factonbr;
 
         return returnSomme;
     }
