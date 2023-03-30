@@ -26,6 +26,7 @@ public class Anagramme {
             for (int j = 0; j < mot2.length(); j++) {
                 if (mot1.charAt(i) == mot2.charAt(j)) {
                     mot2 = mot2.replace(mot2.charAt(j), ' ');
+                    break;
                 }
             }
         }

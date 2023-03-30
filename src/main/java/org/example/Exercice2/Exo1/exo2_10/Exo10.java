@@ -37,7 +37,7 @@ public class Exo10 {
 
     public static int Somme(int nbr, int finalValue) {
         int Factonbr = ++nbr;
-        int returnSomme = 1;
+        int returnSomme = 0;
         if (Factonbr < finalValue) {
             returnSomme = Somme(Factonbr, finalValue);
         }

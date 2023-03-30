@@ -8,12 +8,9 @@ public class Palindrome {
         System.out.println("entrer un mot :");
         Scanner s = new Scanner(System.in);
         String word = s.next().toLowerCase();
-
         boolean test = testPalindrome(word);
 
         System.out.printf("le mot %s "+ (test?"est un palindrome":"n'est pas un palindrome"),word);
-
-
     }
 
     public static boolean testPalindrome(String word){
