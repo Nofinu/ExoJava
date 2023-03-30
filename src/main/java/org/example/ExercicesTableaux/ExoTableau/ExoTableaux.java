@@ -1,4 +1,4 @@
-package org.example.ExercicesTableaux;
+package org.example.ExercicesTableaux.ExoTableau;
 
 import java.util.Scanner;
 import java.util.Random;
