@@ -20,8 +20,6 @@ public class ExoEnum {
                      priority = Priority.MEDIUM;
                     break;
                 case "C":
-                     priority = Priority.LOW;
-                    break;
                 case "D":
                      priority = Priority.LOW;
                     break;
