@@ -45,4 +45,12 @@ public class Exo10 {
 
         return returnSomme;
     }
+
+    public static int multi (int value,int value2){
+        if(value2 ==0){
+            return value * value2;
+        }
+        System.out.println(value+" * "+value2 +" = "+  value*value2 );
+        return multi(value,value2-1);
+    }
 }
