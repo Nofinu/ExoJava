@@ -9,9 +9,10 @@ public class ExoEnum {
         Scanner s = new Scanner(System.in);
         boolean test =true;
         Priority priority = Priority.LOW ;
+        String entry;
         do{
             System.out.println("entrer un message (A,B,C,D)");
-            String entry = s.next().toUpperCase();
+             entry = s.next().toUpperCase();
             switch (entry){
                 case "A":
                      priority = Priority.HIGH;
@@ -30,6 +31,6 @@ public class ExoEnum {
             }
 
         }while(!test);
-        System.out.println(priority);
+        System.out.println(entry +" : "+priority);
     }
 }
