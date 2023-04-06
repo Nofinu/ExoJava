@@ -2,6 +2,7 @@ package org.example;
 
 import org.example.Enum.ExoEnum;
 import org.example.Exercice2.Exo1.exo2_10.Exo10;
+import org.example.Hotel.Ihm.Ihm;
 import org.example.ManagementBook.MainBook;
 import org.example.Matrice.Exo1.Exo1;
 import org.example.Matrice.Exo2.Exo2;
@@ -14,6 +15,7 @@ public class Main {
         //Exo3.voiture();
         //Exo10.multi(4,10);
         //ExoEnum.main();
-        MainBook.main();
+        //MainBook.main();
+        Ihm.start();
     }
 }
