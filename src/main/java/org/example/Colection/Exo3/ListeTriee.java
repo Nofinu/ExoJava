@@ -21,7 +21,7 @@ public class ListeTriee {
 
     public void setList(String mot) {
         this.list.add(mot);
-        trie();
+        this.trie();
     }
 
     public void trie (){
