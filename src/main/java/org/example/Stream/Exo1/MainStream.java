@@ -2,8 +2,6 @@ package org.example.Stream.Exo1;
 
 import org.example.Stream.Exo1.Classes.Trader;
 import org.example.Stream.Exo1.Classes.Transaction;
-import org.example.Stream.Exo1.Tools.ComparatorName;
-import org.example.Stream.Exo1.Tools.ComparatorValue;
 
 import java.util.*;
 import java.util.stream.Collectors;
@@ -22,10 +20,9 @@ public class MainStream {
                 new Transaction(tutu,2012,950),new Transaction(tutu,2022,900));
 
         //recuperation des transaction en 2011
-        ComparatorValue valComp = new ComparatorValue();
         List<Transaction> transaction2011= transactions.stream()
                 .filter(t ->t.getYear() == 2011)
-                .sorted(valComp)
+                .sorted(Comparator.comparing(Transaction::getValue))
                 .collect(Collectors.toList());
 
         System.out.println(transaction2011);
@@ -55,11 +52,10 @@ public class MainStream {
         System.out.println(valMax.get());
 
         //trouver tout les trader de Cambridge
-        ComparatorName compName = new ComparatorName();
         List<Trader> CambridgeTrader = transactions.stream()
                 .map(t-> t.getTrader())
                 .filter(t -> t.getCity().equals("Cambridge"))
-                .sorted(compName)
+                .sorted(Comparator.comparing((Trader::getName)))
                 .distinct()
                 .collect(Collectors.toList());
 
